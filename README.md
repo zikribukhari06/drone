@@ -4,3 +4,33 @@ ini berisikan file file yang mendukung projek drone
 file remote berisikan file file selama mempelajari mekanisme dari trasnmission flow yang bersifat universal, sehingga ini dapat digunakan untuk projek sejenisnya yng membutuhkan remote control
 # recv
 pada sisi receiver, kode yang digunakan mengubah input analog 0-255 menjadi PULSA RC, namun jika projek dapat langsung menggunakan input analog sebagai PWM, maka proes mapping bisa di hilangkan dan langsung di write ke penggerak
+# input remote
+### 1. Hovering (Melayang Diam)
+
+* Hovering adalah kondisi ketika drone melayang stabil pada satu titik tanpa bergerak ke segala arah.
+* Kondisi ini terjadi ketika kecepatan putaran keempat motor sama sehingga gaya dorong yang dihasilkan seimbang dengan gaya gravitasi.
+* Hovering merupakan kondisi dasar yang digunakan sebelum drone melakukan manuver lainnya.
+
+### 2. Throttle (Gerakan Naik dan Turun)
+
+* Throttle mengatur pergerakan drone secara vertikal, yaitu naik atau turun.
+* Untuk membuat drone naik, kecepatan seluruh motor ditingkatkan sehingga gaya dorong lebih besar daripada berat drone.
+* Untuk membuat drone turun, kecepatan seluruh motor dikurangi sehingga gaya dorong lebih kecil daripada berat drone.
+
+### 3. Pitch (Gerakan Maju dan Mundur)
+
+* Pitch mengendalikan gerakan drone ke arah depan atau belakang.
+* Drone bergerak maju dengan meningkatkan kecepatan motor belakang dan mengurangi kecepatan motor depan, sehingga bodi condong ke depan.
+* Drone bergerak mundur dengan meningkatkan kecepatan motor depan dan mengurangi kecepatan motor belakang, sehingga bodi condong ke belakang.
+
+### 4. Roll (Gerakan Kiri dan Kanan)
+
+* Roll mengendalikan gerakan drone ke arah kiri atau kanan tanpa mengubah arah hadapnya.
+* Drone bergerak ke kanan dengan meningkatkan kecepatan motor sisi kiri dan mengurangi kecepatan motor sisi kanan, sehingga bodi miring ke kanan.
+* Drone bergerak ke kiri dengan meningkatkan kecepatan motor sisi kanan dan mengurangi kecepatan motor sisi kiri, sehingga bodi miring ke kiri.
+
+### 5. Yaw (Rotasi atau Perubahan Arah Hadap)
+
+* Yaw mengendalikan putaran drone pada sumbu vertikal sehingga arah hadap drone berubah.
+* Putaran terjadi karena adanya perbedaan torsi antara pasangan motor yang berputar searah jarum jam dan berlawanan arah jarum jam.
+* Yaw ke kiri diperoleh dengan meningkatkan kecepatan motor yang berputar searah jarum jam, sedangkan yaw ke kanan diperoleh dengan meningkatkan kecepatan motor yang berputar berlawanan arah jarum jam.
