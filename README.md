@@ -34,3 +34,12 @@ pada sisi receiver, kode yang digunakan mengubah input analog 0-255 menjadi PULS
 * Yaw mengendalikan putaran drone pada sumbu vertikal sehingga arah hadap drone berubah.
 * Putaran terjadi karena adanya perbedaan torsi antara pasangan motor yang berputar searah jarum jam dan berlawanan arah jarum jam.
 * Yaw ke kiri diperoleh dengan meningkatkan kecepatan motor yang berputar searah jarum jam, sedangkan yaw ke kanan diperoleh dengan meningkatkan kecepatan motor yang berputar berlawanan arah jarum jam.
+
+# rumus mixer motor dari input trothle pitch yaw roll 
+Motor 1 (Depan Kanan)  = T - P - R + Y
+
+Motor 2 (Belakang Kiri) = T + P + R + Y
+
+Motor 3 (Depan Kiri)    = T - P + R - Y
+
+Motor 4 (Belakang Kanan) = T + P - R - Y
