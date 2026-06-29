@@ -43,3 +43,6 @@ Motor 2 (Belakang Kiri) = T + P + R + Y
 Motor 3 (Depan Kiri)    = T - P + R - Y
 
 Motor 4 (Belakang Kanan) = T + P - R - Y
+
+# mpu6050 
+disini merupakan program dasar dalam mengoperasikan mpu6050 untuk mendapatkan angle pitch roll dan yaw secara real time, yang dimana hasilkan data ini akan diproses untuk algoritma pid
