@@ -46,3 +46,7 @@ Motor 4 (Belakang Kanan) = T + P - R - Y
 
 # mpu6050 
 disini merupakan program dasar dalam mengoperasikan mpu6050 untuk mendapatkan angle pitch roll dan yaw secara real time, yang dimana hasilkan data ini akan diproses untuk algoritma pid
+
+# link layout esp32
+https://lastminuteengineers.com/esp32-pinout-reference/#esp32-dac-pins
+
