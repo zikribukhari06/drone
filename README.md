@@ -47,6 +47,10 @@ Motor 4 (Belakang Kanan) = T + P - R - Y
 # mpu6050 
 disini merupakan program dasar dalam mengoperasikan mpu6050 untuk mendapatkan angle pitch roll dan yaw secara real time, yang dimana hasilkan data ini akan diproses untuk algoritma pid
 
+# PID
+ketika melkaukan tunning PID, alih alih hanya menggunakan trail and error. saya berencana untuk merekan semua history angle, sehingga saya dapat mengubahnya meenjadi sebuah grafik untuk menunjukan karakteristik dari pergerakan drone terhadap koreksi PID. sehingga saya dpat menentukan nilai P I D dengan lebih teoritis.
+
 # link layout esp32
-https://lastminuteengineers.com/esp32-pinout-reference/#esp32-dac-pins
+https://lastminuteengineers.com/esp32-pinout-reference/#esp32-dac-pin
+
 
