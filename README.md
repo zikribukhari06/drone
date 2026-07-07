@@ -49,6 +49,11 @@ disini merupakan program dasar dalam mengoperasikan mpu6050 untuk mendapatkan an
 
 # PID
 ketika melkaukan tunning PID, alih alih hanya menggunakan trail and error. saya berencana untuk merekan semua history angle, sehingga saya dapat mengubahnya meenjadi sebuah grafik untuk menunjukan karakteristik dari pergerakan drone terhadap koreksi PID. sehingga saya dpat menentukan nilai P I D dengan lebih teoritis.
+berikut langkah langkah dalam menentukan PID secara matematis
+1. membuat Ki dan Kd menjadi 0, sehingga pergerkan hanya akan didsarkan oleh respon komponen P
+2. naikkan nilai Kp secara perlahan sampai didapatkan grafik osilasi yang stabil
+3. berdasarkan grafik yang dihasilkan, maka akan didapatkan nilai Ku yaitu nilai Kp terakhir, dan Pu yaitu waktu satu periode
+4. setelah data Ku dan Pu didapat, masukkan dalam tabel perhitungan PID dengan metode Kalkulasi Ziegler-Nichols.
 
 # link layout esp32
 https://lastminuteengineers.com/esp32-pinout-reference/#esp32-dac-pin
