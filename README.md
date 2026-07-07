@@ -2,8 +2,11 @@
 ini berisikan file file yang mendukung projek drone, beserta keterangan dan penjelasan yang dibutuhkan dalam proses pengembangan.
 # Remote
 file remote berisikan file file selama mempelajari mekanisme dari trasnmission flow yang bersifat universal, sehingga ini dapat digunakan untuk projek sejenisnya yng membutuhkan remote control.
+menggunakan arduino nano dan nRF24L01 sebagai modul transcevier. menggunakan analog joystick sebagia input analog pergerakan dan beberapa switch sebagai input digital, input joystick digunakan untuk menggtrol yaw pitch roll dan trothlle.
+
 # recv
-pada sisi receiver, kode yang digunakan mengubah input analog 0-255 menjadi PULSA RC, namun jika projek dapat langsung menggunakan input analog sebagai PWM, maka proes mapping bisa di hilangkan dan langsung di write ke penggerak.
+menggunakan modul nRF24L01 sebagai penerima sinyal radio, setelah menerima struct yang berisikan data analog, data analog tersebut akan di mapping sesuai kebutuhan, dan akan menjadi input PWM.
+
 # Input Remote
 ### 1. Hovering (Melayang Diam)
 
