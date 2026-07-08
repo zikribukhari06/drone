@@ -61,4 +61,8 @@ berikut langkah langkah dalam menentukan PID secara matematis
 # link layout esp32
 https://lastminuteengineers.com/esp32-pinout-reference/#esp32-dac-pin
 
+# link panduan Rx Tx dengan nrf24l01
+https://www.rcpano.net/2022/10/30/making-a-long-distance-8-channel-and-digital-trim-remote-control-diy-rc-part-2/
+
+
 
