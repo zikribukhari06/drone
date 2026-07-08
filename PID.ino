@@ -42,7 +42,7 @@ void loop() {
 
   if(awal - timer >= batas ) { // membatasi siklus dalam 100hz
 
-    dt = (awal - timer ) /1000000.0; // melakukan perhitungan selisih antar siklus sebagai data dt
+    dt = (awal - timer ) /1000000.0f; // melakukan perhitungan selisih antar siklus sebagai data dt
     timer = awal;
 
     float Aktual_pitch = mpu.getAngleX(); // pembacaan angle pitch 
