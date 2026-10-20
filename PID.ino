@@ -13,7 +13,7 @@ float sigma_Error = 0;
 float selisih_Error = 0;
 unsigned long timer = 0; // variabel penampung waktu 
 unsigned long awal = 0; // variabel penampung waktu loop pertama kali di mulai
-const unsigned long batas = 100000; // membatasi siklus perhitungan PID dalam micro second
+const unsigned long batas = 10000; // membatasi siklus perhitungan PID dalam micro second
 float dt = 0;
 
 
